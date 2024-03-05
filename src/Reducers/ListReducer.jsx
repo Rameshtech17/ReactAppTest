@@ -11,12 +11,12 @@ const buildQueryParams = (params) => {
 export const getList = createAsyncThunk(
     'list\getList',
     async (action) => {
-        // const url = 'www.test.com';
+        // const url = 'www.test. com';
         const url = 'https://gorest.co.in/public/v2/users'
         const res = await axios.get(url);
         // const res = await axios.get(
         //     `${url}${buildQueryParams({
-        //         action,
+        //         action, 
         //     })}`
         // );
         if (res && res.status === 200

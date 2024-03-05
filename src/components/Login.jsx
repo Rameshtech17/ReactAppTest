@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TextField, Button, Grid, Paper, styled, Container } from "@material-ui/core";
+import { TextField, Button, Grid, Paper, styled, Container,Checkbox  } from "@material-ui/core";
 import { Box } from '@mui/material';
 import { setOpenAlert } from '../Reducers/CommonReducer';
 import { useDispatch } from "react-redux";
@@ -36,8 +36,11 @@ const LoginForm = () => {
                 }))
                 setPassword('');
                 setEmail('');
+                window.location.pathname = "/list";
+
             }
             else {
+                // throw new Error('Danger zone!')
                 dispatch(setOpenAlert({
                     alertInfo: "Login Error",
                     alertSeverity: 'error',

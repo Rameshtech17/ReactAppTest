@@ -17,8 +17,6 @@ function List() {
     return (
         <>
 
-            {/* <TextField id="outlined-basic" label="Outlined" variant="outlined" /> */}
-
             <button onClick={
                 getListData
             }>Get list</button>
@@ -28,7 +26,7 @@ function List() {
                         <Box
                             sx={{
                                 marginX: '5%',
-                                width: '30%',
+                                width: '50%',
                                 backgroundColor: '#cdf2fa',
                                 borderRadius: '2%'
 
@@ -42,7 +40,6 @@ function List() {
                 )
 
             })}
-            {/* <Chip label="Chip Outlined" variant="outlined" /> */}
         </>
     )
 

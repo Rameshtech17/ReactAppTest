@@ -12,7 +12,8 @@ import { Typography } from '@material-ui/core';
 import LoginForm from '../components/Login';
 import AlertPopup from '../components/Common/Alert'
 import RegisterForm from '../components/Register';
-
+import AppLogout from "../components/Common/AppLogOut"
+import Header from "../components/Header"
 const NotFound = ({ path }) => {
 
     return (
@@ -35,10 +36,11 @@ const NotFound = ({ path }) => {
 }
 
 function AppRouting() {
-
     return (
         <>
             <AlertPopup />
+            <AppLogout/>
+            <Header/>
             <Router>
                 <Routes>
                     <Route path={'/list'} element={<List />} />

@@ -28,10 +28,12 @@ const RegisterForm = () => {
         setLastName('')
         setDateOfBirth('')
         dispatch(setOpenAlert({
-            alertInfo: "Login Success",
+            alertInfo: "Register Success",
             alertSeverity: 'success',
         }
         ))
+        window.location.pathname = "/login";
+
     }
 
     return (
